@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Rosary</string>
+
+    <string name="cross_sign_long">Sign of Cross(Long Version)</string>
+    <string name="cross_sign_long_prayer">By the sign of the cross deliver us from our enemies, you who are our God. \n\n ✝ In the name of the Father, \n ✝ and of the Son. \n ✝ and of the Holy Spirit. \n\n\n Amen</string>
+
+    <string name="apostles_creed">Apostles Creed</string>
+    <string name="apostles_creed_prayer">Apostles Creed Prayer</string>
+
+    <string name="our_father">Our Father</string>
+    <string name="our_father_prayer">Our Father Prayer</string>
+
+    <string name="hail_mary">Hail Mary</string>
+    <string name="hail_mary_prayer">Hail Mary Prayer</string>
+
+    <string name="cross_sign_small">Sign of Cross(Small Version)</string>
+    <string name="cross_sign_small_prayer">\n ✝ In the name of the Father, \n ✝ and of the Son. \n ✝ and of the Holy Spirit. \n\n\n Amen</string>
+
+    <string name="o_my_jesus">Oh my Jesus</string>
+    <string name="o_my_jesus_prayer">Oh my Jesus Prayer</string>
+
+    <string name="back_button">Back</string>
+    <string name="next">Next</string>
+
+</resources>
