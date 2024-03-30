@@ -1,7 +1,5 @@
 package com.mary.rosary.ui.screen
 
-import android.content.Context
-import android.content.Intent
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -29,10 +27,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.mary.rosary.R
-import com.mary.rosary.data.Prayers
 
-enum class RosaryScreen(@StringRes val title: Int) {
-    Prayer(title = Prayers.crossSignLong.title),
+enum class RosaryScreen {
+    Prayer
 }
 
 
@@ -104,30 +101,4 @@ fun RosaryApp(
 
         }
     }
-}
-
-private fun resetAndNavigateToStart(
-    viewModel: RosaryViewModal,
-    navController: NavHostController
-) {
-    viewModel.resetRosary()
-    navController.popBackStack(RosaryScreen.Prayer.name, inclusive = false)
-}
-
-/**
- * Creates an intent to share order details
- */
-private fun shareOrder(context: Context, subject: String, summary: String) {
-    // Create an ACTION_SEND implicit intent with order details in the intent extras
-    val intent = Intent(Intent.ACTION_SEND).apply {
-        type = "text/plain"
-        putExtra(Intent.EXTRA_SUBJECT, subject)
-        putExtra(Intent.EXTRA_TEXT, summary)
-    }
-    context.startActivity(
-        Intent.createChooser(
-            intent,
-            context.getString(R.string.app_name)
-        )
-    )
 }
